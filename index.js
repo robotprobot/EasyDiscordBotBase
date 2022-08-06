@@ -12,7 +12,7 @@ if (fs.existsSync(path.join(__dirname, '.env'))) {
   console.log(`No .env file found.
   Please create a .env file in the root directory with the following format:
     DISCORD_TOKEN=<YOUR_DISCORD_TOKEN>
-    DISCORD_PREFIX=<YOUR_DISCORD_PREFIX>
+    DISCORD_CLIENTID=<YOUR_DISCORD_CLIENTID>
   `)
   process.exit(9);
 }

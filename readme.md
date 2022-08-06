@@ -1,5 +1,5 @@
 ## 🤖 EasyDiscordBotBase - the simple to use Discord bot base.
-EasyDiscordBotBase is a discord bot base that takes advantage of the new Discord.js 14, slash commands and other new features.
+EasyDiscordBotBase is a ready to go discord bot base that takes advantage of the new Discord.js 14, slash commands and other new features.
 
 EasyDiscordBotBase allows the owner to create or install custom modules to add features. Share your modules in the Discussions tab!
 

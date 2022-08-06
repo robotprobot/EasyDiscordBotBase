@@ -45,4 +45,4 @@ Remotely with the pm2.io service which shows much more advanced metrics and can 
 ---
 
 > ⚠️ There is no warranty included or implied with EasyDiscordBotBase, and the creator will accept no liability for damage or loss. It is assumed that you have some technical competence and the ability to host a Discord bot server.
-If you require support, please use the Issues tab on GitHub.
+If you require support, please use the Issues tab on GitHub for base support, or the Community Help and Support section in the Discussions tab on GitHub for help with modules.

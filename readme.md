@@ -19,5 +19,10 @@ See the monitoring guide in the Wiki [here!](https://github.com/robotprobot/Easy
 
 ---
 
+### 🏗️ Creating, importing and sharing modules:
+If you want to create your own modules, import others modules, or share a module you made, read about it [here!](https://github.com/robotprobot/EasyDiscordBotBase/wiki/Module-creation,-importing-and-sharing)
+
+---
+
 > ⚠️ There is no warranty included or implied with EasyDiscordBotBase, and the creator will accept no liability for damage or loss. It is assumed that you have some technical competence and the ability to host a Discord bot server.
 If you require support, please use the Issues tab on GitHub for base support, or the Community Help and Support section in the Discussions tab on GitHub for help with modules.

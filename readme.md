@@ -22,6 +22,7 @@ DISCORD_TOKEN=<token>
 DISCORD_CLIENTID=<clientid>
 ```
 Replace the ```<token>``` and ```<clientid>``` with the bot token and client ID respectively. You can get this information from the [Discord Developer Portal](https://discord.com/developers/applications).
+
 5) Add or create any modules you like in the "commands" folder.
 6) Run the command ```npm run refresh-commands```.
 7) Run the command ```npm run start``` to start the bot.

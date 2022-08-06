@@ -10,37 +10,12 @@ EasyDiscordBotBase allows the owner to create or install custom modules to add f
 ---
 
 ### 💽 Setup:
-> 📋 Manual requirements - Node 18.6.0 or greater is recommended. NPM (included with Node) and Git is required to run these commands. The installation process will take care of any other requirements automatically.
-
-1) Clone this repo using the command ```git clone <repo-link>``` and enter the folder.
-2) Run the command ```npm install``` to install the required dependencies.
-3) Create a file in the root directory called ```.env```.
-4) Copy and paste the following template into the file: 
-
-```
-DISCORD_TOKEN=<token>
-DISCORD_CLIENTID=<clientid>
-```
-Replace the ```<token>``` and ```<clientid>``` with the bot token and client ID respectively. You can get this information from the [Discord Developer Portal](https://discord.com/developers/applications).
-
-5) Add or create any modules you like in the "commands" folder.
-6) Run the command ```npm run refresh-commands```.
-7) Run the command ```npm run start``` to start the bot.
-
-👍 The bot should now be operating and can be added to servers by appending your client ID into the following link:
-
-```https://discord.com/api/oauth2/authorize?client_id= <clientid> &scope=applications.commands```.
-
-If you need to turn off the bot, simply use the command ```npm run stop```.
+See the setup guide in the Wiki [here!](https://github.com/robotprobot/EasyDiscordBotBase/wiki/Setting-up,-activating-and-monitoring-EasyDiscordBotBase#-setup)
 
 ---
 
 ### 👀 Monitoring:
-#### EasyDiscordBotBase can be monitored in two different ways: 
-
-On-server within a terminal by using the command ```npm run monitor```, which will show the process memory, CPU usage and logs.
-
-Remotely with the pm2.io service which shows much more advanced metrics and can be accessed from anywhere, using the command ```npm run monitor-remote``` to setup.
+See the monitoring guide in the Wiki [here!](https://github.com/robotprobot/EasyDiscordBotBase/wiki/Setting-up,-activating-and-monitoring-EasyDiscordBotBase#-monitoring)
 
 ---
 

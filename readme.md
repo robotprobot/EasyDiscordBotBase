@@ -5,7 +5,7 @@ EasyDiscordBotBase allows the owner to create or install custom modules to add f
 
 ---
 
->⚠️ EasyDiscordBotBase should not be used for illegal or immoral purposes, and should not be used to be disruptive in general. Think about others.
+>⚠️ EasyDiscordBotBase should not be used for illegal or immoral purposes, and should not be used to be disruptive in general. Think about others. The developers of the EasyDiscordBotBase will take no responsibility for the actions of custom module creators.
 
 ---
 

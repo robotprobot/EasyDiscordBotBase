@@ -9,25 +9,25 @@ dotenv.config()
 
 // Print information
 console.log(`Discord Slash Command API refresher v1.0.0
-by robotprobot#8211.
+by Oasis#8211.
 `);
 
-// Check for presence of commands folder
-console.log("Started reading commands folder.");
-if (!fs.existsSync('./commands')) {
-  console.log('No commands folder found. Exiting.');
+// Check for presence of modules folder
+console.log("Started reading modules folder.");
+if (!fs.existsSync('./modules')) {
+  console.log('No modules folder found. Exiting.');
   process.exit(9);
 }
 
-// Start reading commands from the commands folder
-const commands = []
-const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'))
+// Start reading modules from the modules folder
+const modules = []
+const moduleFiles = fs.readdirSync('./modules').filter(file => file.endsWith('.js'))
 
-for (const file of commandFiles) {
-  const command = require(`./commands/${file}`)
-  commands.push(command.data.toJSON())
+for (const file of moduleFiles) {
+  const module = require(`./modules/${file}`)
+  modules.push(module.data.toJSON())
 }
-console.log(`Commands folder read successfully (${commands.length} commands).`)
+console.log(`Modules folder read successfully (${modules.length} modules).`)
 
 // Use token for authentication to the Discord REST API
 const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN);

@@ -19,7 +19,7 @@ if (fs.existsSync(path.join(__dirname, '.env'))) {
 
 // Announce the start of the program
 console.log(`==============================  System wake up requested  ==============================
-Software base and default modules created by robotprobot#8211 and licenced under the CC0-1.0 licence.
+Software base and default modules created by Oasis#8211 and licenced under the CC0-1.0 licence.
 Custom/installed modules are created by other individuals (or the user) and may be subject to different licences.
 Initializing ${packagejson.name} v${packagejson.version}...`);
 
@@ -40,17 +40,17 @@ for (const file of eventFiles) {
   }
 }
 
-// Load in the commands
-client.commands = new Collection()
-const commandsPath = path.join(__dirname, 'commands')
-const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js'))
+// Load in the modules
+client.modules = new Collection()
+const modulesPath = path.join(__dirname, 'modules')
+const moduleFiles = fs.readdirSync(modulesPath).filter(file => file.endsWith('.js'))
 
-for (const file of commandFiles) {
-  const filePath = path.join(commandsPath, file)
-  const command = require(filePath)
+for (const file of moduleFiles) {
+  const filePath = path.join(modulesPath, file)
+  const module = require(filePath)
   // Set a new item in the Collection
-  // With the key as the command name and the value as the exported module
-  client.commands.set(command.data.name, command)
+  // With the key as the module name and the value as the exported module
+  client.modules.set(module.data.name, module)
 }
 
 // Exit logic

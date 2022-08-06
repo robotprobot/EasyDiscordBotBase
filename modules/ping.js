@@ -11,7 +11,7 @@ const { SlashCommandBuilder } = require('discord.js')
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('ping')
-    .setDescription('Replies with Pong!'),
+    .setDescription('Check the bot is alive and view its latency.'),
   async execute (interaction) {
     const sent = await interaction.reply({ content: 'Pinging...', fetchReply: true, ephemeral: true });
     interaction.editReply(`Pong! \nWebsocket latency: ${interaction.client.ws.ping}ms\nRoundtrip latency: ${sent.createdTimestamp - interaction.createdTimestamp}ms`);

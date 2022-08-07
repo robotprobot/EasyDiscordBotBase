@@ -46,7 +46,7 @@ Adding new commands.`))
     await rest.put(
       // Add new slash commands
       Routes.applicationCommands(process.env.DISCORD_CLIENTID),
-      { body: commands }
+      { body: modules }
     )
 
     console.log(`Successfully added commands.

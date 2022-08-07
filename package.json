@@ -9,6 +9,7 @@
     "stop": "pm2 stop DiscordBot",
     "refresh-commands": "node deploy-commands.js",
     "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
     "monitor": "pm2 monit",
     "monitor-remote": "pm2 monitor"
   },

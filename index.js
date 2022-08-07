@@ -2,7 +2,7 @@
 const fs = require('node:fs')
 const path = require('node:path')
 const { Client, Collection, GatewayIntentBits } = require('discord.js')
-const packagejson = require('./package.json');
+const packagejson = require('./package.json')
 const dotenv = require('dotenv')
 
 // Check for and load in the dotenv configuration file
@@ -14,14 +14,14 @@ if (fs.existsSync(path.join(__dirname, '.env'))) {
     DISCORD_TOKEN=<YOUR_DISCORD_TOKEN>
     DISCORD_CLIENTID=<YOUR_DISCORD_CLIENTID>
   `)
-  process.exit(9);
+  process.exit(9)
 }
 
 // Announce the start of the program
 console.log(`==============================  System wake up requested  ==============================
 Software base and default modules created by Oasis#8211 and licenced under the CC0-1.0 licence.
 Custom/installed modules are created by other individuals (or the user) and may be subject to different licences.
-Initializing ${packagejson.name} v${packagejson.version}...`);
+Initializing ${packagejson.name} v${packagejson.version}...`)
 
 // Create a new client instance
 const client = new Client({ intents: [GatewayIntentBits.Guilds] })
@@ -54,17 +54,17 @@ for (const file of moduleFiles) {
 }
 
 // Exit logic
-process.on("exit", () => {
-  console.log("Program termination request detected. Goodbye.");
-});
-process.on("SIGHUP", () => process.exit(128 + 1));
-process.on("SIGINT", () => process.exit(128 + 2));
-process.on("SIGTERM", () => process.exit(128 + 15));
+process.on('exit', () => {
+  console.log('Program termination request detected. Goodbye.')
+})
+process.on('SIGHUP', () => process.exit(128 + 1))
+process.on('SIGINT', () => process.exit(128 + 2))
+process.on('SIGTERM', () => process.exit(128 + 15))
 
 // Unhandled error logic
-process.on("unhandledRejection", (error) => {
-  console.log("Unhandled rejection: " + error);
-});
+process.on('unhandledRejection', (error) => {
+  console.log('Unhandled rejection: ' + error)
+})
 
 // Login to Discord with token
 client.login(process.env.DISCORD_TOKEN)

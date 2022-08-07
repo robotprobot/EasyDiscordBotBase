@@ -10,13 +10,13 @@ dotenv.config()
 // Print information
 console.log(`Discord Slash Command API refresher v1.0.0
 by Oasis#8211.
-`);
+`)
 
 // Check for presence of modules folder
-console.log("Started reading modules folder.");
+console.log('Started reading modules folder.')
 if (!fs.existsSync('./modules')) {
-  console.log('No modules folder found. Exiting.');
-  process.exit(9);
+  console.log('No modules folder found. Exiting.')
+  process.exit(9)
 }
 
 // Start reading modules from the modules folder
